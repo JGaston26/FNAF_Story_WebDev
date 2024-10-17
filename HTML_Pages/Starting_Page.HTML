@@ -1,0 +1,23 @@
+<DOCTYPE html> 
+<html>
+    <head>
+        <title>Five Nights At Freddys</title>
+        <style></style>
+        <script type="text/javascript">
+            let name
+            function initiazlize(){
+                name = document.getElementById('username').value;
+                console.log(name);
+            }
+            function nextPage(link){
+                window.location.href = link;
+            }
+        </script>
+    </head>
+    <form onsubmit="nextPage('Newspaper.html');">
+        Name of Employee:<input id="username"  ontype="text" name="Employee Name">
+    </form>
+    <body>
+        <div onload="initiazlize();"></div>
+    </body>
+</html>
